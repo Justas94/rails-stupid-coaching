@@ -1,0 +1,22 @@
+<h1>Stupid Coaching</h1>
+
+<!-- <p>Ask your coach everything:</p>
+<form action="/questions" method="post">
+  <input type="text" name="Ask your coach anything">
+  <input type="submit" value="Ask!">
+</form> -->
+<div class="container">
+  <div class="questions">
+    <h3><em>Questions</em></h3>
+    <p> <%= @question_asked %> </p>
+    <p><em>-You</em></p>
+  </div>
+
+  <div class="answers">
+    <h3><em>Answers</em></h3>
+    <p><strong><%= @answer %></strong></p>
+    <p><em>-Your Coach</em></p>
+  </div>
+  <br>
+  <a href="/ask">Ask again </a>
+</div>
